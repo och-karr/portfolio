@@ -1,0 +1,19 @@
+@mixin icon-size($size) {
+    width: $size;
+    height: $size;
+    line-height: $size;
+}
+
+@mixin main-icon-settings {
+    border-radius: 50%;
+    text-align: center;
+    color: $dark-clr;
+    transition: color 0.3s, transform 0.3s;
+}
+
+@mixin hover-icon-settings {
+    cursor: pointer;
+    color: $white-clr;
+    background-color: $main-clr; 
+    transform: scale(1.2);
+}
