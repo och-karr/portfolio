@@ -1,11 +1,45 @@
 h1 {
+  font-size: 52px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
 
+  @media #{$max767} {
+    font-size: 42px;
+  }
+
+  @media #{$max575} {
+    font-size: 32px;
+  }
 }
 
 h2 {
-
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
 }
 
 h3 {
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
 
+  @media #{$max767} {
+    font-size: 32px;
+  }
+
+  @media #{$max575} {
+    font-size: 24px;
+  }
+}
+
+p {
+  line-height: 28px;
+
+  @media #{$max575} {
+    font-size: 15px;
+    line-height: 24px;
+  }
 }

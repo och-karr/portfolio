@@ -1,0 +1,20 @@
+.header {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media #{$max575} {
+    padding: 0 15px;
+  }
+
+  &--name {
+
+    &-sub {
+      &-add {
+        color: $main-clr;
+      }
+    }
+  }
+}
