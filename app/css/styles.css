@@ -52,6 +52,10 @@ h3 {
     h3 {
       font-size: 24px; } }
 
+h4 {
+  font-size: 26px;
+  font-weight: 500; }
+
 p {
   line-height: 28px; }
   @media all and (max-width: 575px) {
@@ -74,32 +78,34 @@ p {
     .main {
       padding: 0 15px; } }
 
-.section--title {
-  position: relative;
-  margin-bottom: 20px; }
-  @media all and (max-width: 767px) {
-    .section--title {
-      margin-bottom: 10px; } }
-  @media all and (max-width: 575px) {
-    .section--title {
-      margin-bottom: 0; } }
-  .section--title::after {
-    content: "";
-    width: 6%;
-    height: 3px;
-    display: inline-block;
-    position: absolute;
-    bottom: 5px;
-    left: calc(50% - 3%);
-    background: #F34A53;
-    border: 1px solid #F34A53;
-    border-radius: 20%;
-    margin: 12px auto; }
+.section {
+  margin-bottom: 50px; }
+  .section--title {
+    position: relative;
+    margin-bottom: 20px; }
+    @media all and (max-width: 767px) {
+      .section--title {
+        margin-bottom: 10px; } }
     @media all and (max-width: 575px) {
-      .section--title::after {
-        width: 10%;
-        height: 2px;
-        left: calc(50% - 5%); } }
+      .section--title {
+        margin-bottom: 0; } }
+    .section--title::after {
+      content: "";
+      width: 6%;
+      height: 3px;
+      display: inline-block;
+      position: absolute;
+      bottom: 5px;
+      left: calc(50% - 3%);
+      background: #F34A53;
+      border: 1px solid #F34A53;
+      border-radius: 20%;
+      margin: 12px auto; }
+      @media all and (max-width: 575px) {
+        .section--title::after {
+          width: 10%;
+          height: 2px;
+          left: calc(50% - 5%); } }
 
 .basic-text {
   text-align: justify; }
@@ -226,3 +232,48 @@ p {
 .about-me--text-link {
   font-weight: 500;
   text-decoration: underline; }
+
+.projects .project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  border: 5px solid #e4e4e4;
+  border-radius: 5px;
+  padding: 20px 50px;
+  margin-bottom: 20px; }
+  .projects .project--title {
+    display: inline;
+    padding: 0 0 20px 0; }
+  .projects .project--stack {
+    font-size: 18px;
+    padding: 0 0 20px 0;
+    font-weight: 500; }
+  .projects .project--box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .projects .project--box .project-img-container {
+      width: 50%;
+      padding: 20px 20px 20px 0; }
+      .projects .project--box .project-img-container .project-img {
+        width: 100%;
+        box-shadow: 35px 39px 44px -31px rgba(0, 0, 0, 0.75); }
+    .projects .project--box .project-content {
+      width: 50%;
+      padding: 20px 0 20px 20px; }
+      .projects .project--box .project-content .project-icons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 50px; }
+        .projects .project--box .project-content .project-icons .fas {
+          font-size: 28px;
+          padding: 10px;
+          margin: 0 20px;
+          border-radius: 10px;
+          border: 4px solid #F34A53;
+          color: #F34A53; }
+          .projects .project--box .project-content .project-icons .fas:hover {
+            color: #fff;
+            background-color: #F34A53; }
