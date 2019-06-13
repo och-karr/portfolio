@@ -110,6 +110,49 @@ p {
 .basic-text {
   text-align: justify; }
 
+.square1 {
+  background-color: #F34A53;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 30%;
+  right: -400px;
+  z-index: -5;
+  width: 600px;
+  height: 600px; }
+  @media all and (max-width: 991px) {
+    .square1 {
+      right: -500px; } }
+  @media all and (max-width: 767px) {
+    .square1 {
+      top: 35%; } }
+  @media all and (max-width: 575px) {
+    .square1 {
+      top: 30%;
+      right: -550px; } }
+
+.square2 {
+  background-color: #F34A53;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 198%;
+  left: -400px;
+  z-index: -5;
+  width: 600px;
+  height: 600px; }
+  @media all and (max-width: 1199px) {
+    .square2 {
+      left: -500px; } }
+  @media all and (max-width: 991px) {
+    .square2 {
+      top: 218%; } }
+  @media all and (max-width: 767px) {
+    .square2 {
+      left: -550px; } }
+  @media all and (max-width: 575px) {
+    .square2 {
+      top: 190%;
+      left: -586px; } }
+
 .nav {
   height: 70px;
   padding: 15px 30px;
@@ -242,7 +285,8 @@ p {
   border: 5px solid #e4e4e4;
   border-radius: 5px;
   margin-bottom: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #fff; }
   .projects .project--arrow {
     position: absolute;
     top: 27px;
@@ -381,3 +425,65 @@ p {
   opacity: 1;
   max-height: 1000px;
   transition: ease-out max-height 0.5s, ease-out opacity 0.8s; }
+
+.contact-section .contact-columns {
+  display: flex;
+  flex-wrap: wrap; }
+  .contact-section .contact-columns .my-data {
+    width: 50%; }
+    @media all and (max-width: 767px) {
+      .contact-section .contact-columns .my-data {
+        width: 100%; } }
+    .contact-section .contact-columns .my-data .my-data-title {
+      text-align: center; }
+      @media all and (max-width: 991px) {
+        .contact-section .contact-columns .my-data .my-data-title {
+          font-size: 22px; } }
+      @media all and (max-width: 767px) {
+        .contact-section .contact-columns .my-data .my-data-title {
+          font-size: 18px;
+          text-align: left;
+          padding-top: 30px; } }
+    .contact-section .contact-columns .my-data .my-btn-container {
+      padding-left: 80px; }
+      @media all and (max-width: 991px) {
+        .contact-section .contact-columns .my-data .my-btn-container {
+          padding-left: 40px; } }
+      @media all and (max-width: 767px) {
+        .contact-section .contact-columns .my-data .my-btn-container {
+          padding-left: 10px; } }
+      .contact-section .contact-columns .my-data .my-btn-container .my-btn {
+        display: block;
+        text-align: left; }
+        .contact-section .contact-columns .my-data .my-btn-container .my-btn .contact-icon-description {
+          padding-left: 20px; }
+          @media all and (max-width: 991px) {
+            .contact-section .contact-columns .my-data .my-btn-container .my-btn .contact-icon-description {
+              font-size: 14px; } }
+        .contact-section .contact-columns .my-data .my-btn-container .my-btn .fab,
+        .contact-section .contact-columns .my-data .my-btn-container .my-btn .fas {
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 50%;
+          text-align: center;
+          color: #333333;
+          transition: color 0.3s, transform 0.3s; }
+        .contact-section .contact-columns .my-data .my-btn-container .my-btn:hover {
+          cursor: pointer; }
+          .contact-section .contact-columns .my-data .my-btn-container .my-btn:hover .fab,
+          .contact-section .contact-columns .my-data .my-btn-container .my-btn:hover .fas {
+            cursor: pointer;
+            color: #fff;
+            background-color: #F34A53;
+            transform: scale(1.2); }
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #F34A53; }

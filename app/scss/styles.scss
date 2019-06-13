@@ -20,7 +20,10 @@ Imports all project style components.
 // Components
 
 // Modules
+@import "modules/squares";
 @import "modules/nav";
 @import "modules/header";
 @import "modules/about";
 @import "modules/projects";
+@import "modules/contact";
+@import "modules/footer";
