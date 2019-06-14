@@ -1,13 +1,18 @@
 .square1 {
-  background-color: $main-clr;
-  transform: rotate(45deg);
+  &::after {
+    content: "";
+    display: inline-block;
+    background-color: $main-clr;
+    transform: rotate(45deg);
+    z-index: -5;
+    width: 600px;
+    height: 600px;
+  }
+
   position: absolute;
   // top: 6%;
   top: 210px;
   right: -400px;
-  z-index: -5;
-  width: 600px;
-  height: 600px;
 
   @media #{$max991} {
     top: 290px;
@@ -26,15 +31,20 @@
 }
 
 .square2 {
-  background-color: $main-clr;
-  transform: rotate(45deg);
+  &::after {
+    content: "";
+    display: inline-block;
+    background-color: $main-clr;
+    transform: rotate(45deg);
+    z-index: -5;
+    width: 600px;
+    height: 600px;
+  }
+
   position: absolute;
   // top: 46%;
   top: 1728px;
   left: -400px;
-  z-index: -5;
-  width: 600px;
-  height: 600px;
 
   @media #{$max1199} {
     left: -450px;

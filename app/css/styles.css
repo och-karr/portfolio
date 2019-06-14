@@ -115,14 +115,17 @@ p {
   text-align: justify; }
 
 .square1 {
-  background-color: #F34A53;
-  transform: rotate(45deg);
   position: absolute;
   top: 210px;
-  right: -400px;
-  z-index: -5;
-  width: 600px;
-  height: 600px; }
+  right: -400px; }
+  .square1::after {
+    content: "";
+    display: inline-block;
+    background-color: #F34A53;
+    transform: rotate(45deg);
+    z-index: -5;
+    width: 600px;
+    height: 600px; }
   @media all and (max-width: 991px) {
     .square1 {
       top: 290px;
@@ -136,14 +139,17 @@ p {
       right: -632px; } }
 
 .square2 {
-  background-color: #F34A53;
-  transform: rotate(45deg);
   position: absolute;
   top: 1728px;
-  left: -400px;
-  z-index: -5;
-  width: 600px;
-  height: 600px; }
+  left: -400px; }
+  .square2::after {
+    content: "";
+    display: inline-block;
+    background-color: #F34A53;
+    transform: rotate(45deg);
+    z-index: -5;
+    width: 600px;
+    height: 600px; }
   @media all and (max-width: 1199px) {
     .square2 {
       left: -450px; } }
