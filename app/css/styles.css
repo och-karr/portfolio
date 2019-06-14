@@ -63,6 +63,10 @@ p {
       font-size: 14px;
       line-height: 22px; } }
 
+.container {
+  position: relative;
+  overflow: hidden; }
+
 .main {
   width: 75%;
   max-width: 1200px;
@@ -114,50 +118,53 @@ p {
   background-color: #F34A53;
   transform: rotate(45deg);
   position: absolute;
-  top: 30%;
+  top: 210px;
   right: -400px;
   z-index: -5;
   width: 600px;
   height: 600px; }
   @media all and (max-width: 991px) {
     .square1 {
-      right: -500px; } }
+      top: 290px;
+      right: -490px; } }
   @media all and (max-width: 767px) {
     .square1 {
-      top: 35%; } }
+      top: 237px; } }
   @media all and (max-width: 575px) {
     .square1 {
-      top: 30%;
-      right: -550px; } }
+      top: 104px;
+      right: -632px; } }
 
 .square2 {
   background-color: #F34A53;
   transform: rotate(45deg);
   position: absolute;
-  top: 198%;
+  top: 1728px;
   left: -400px;
   z-index: -5;
   width: 600px;
   height: 600px; }
   @media all and (max-width: 1199px) {
     .square2 {
-      left: -500px; } }
+      left: -450px; } }
   @media all and (max-width: 991px) {
     .square2 {
-      top: 218%; } }
+      top: 1923px;
+      left: -493px; } }
   @media all and (max-width: 767px) {
     .square2 {
+      top: 1945px;
       left: -550px; } }
   @media all and (max-width: 575px) {
     .square2 {
-      top: 190%;
-      left: -586px; } }
+      top: 1472px;
+      left: -616px; } }
 
 .nav {
   height: 70px;
   padding: 15px 30px;
   position: sticky;
-  top: 5px;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -286,7 +293,8 @@ p {
   border-radius: 5px;
   margin-bottom: 20px;
   cursor: pointer;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow: hidden; }
   .projects .project--arrow {
     position: absolute;
     top: 27px;
@@ -425,6 +433,73 @@ p {
   opacity: 1;
   max-height: 1000px;
   transition: ease-out max-height 0.5s, ease-out opacity 0.8s; }
+
+@media all and (max-width: 575px) {
+  .technologies--list {
+    display: flex;
+    flex-wrap: wrap; } }
+
+.technologies--list-el {
+  height: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center; }
+  @media all and (max-width: 767px) {
+    .technologies--list-el {
+      height: 90px; } }
+  @media all and (max-width: 575px) {
+    .technologies--list-el {
+      width: 50%;
+      justify-content: center; } }
+  .technologies--list-el .technologies-img-container {
+    height: 100px;
+    width: 90px;
+    margin-right: 20px;
+    display: inline-block; }
+    @media all and (max-width: 767px) {
+      .technologies--list-el .technologies-img-container {
+        width: 70px;
+        margin-right: 10px; } }
+    .technologies--list-el .technologies-img-container .technologies-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .technologies--list-el .technologies-text {
+    display: flex;
+    height: 100%;
+    width: calc(100% - 100px); }
+    .technologies--list-el .technologies-text .bold-text {
+      height: 100%;
+      padding-right: 20px;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 600; }
+      @media all and (max-width: 991px) {
+        .technologies--list-el .technologies-text .bold-text {
+          font-size: 18px; } }
+      @media all and (max-width: 767px) {
+        .technologies--list-el .technologies-text .bold-text {
+          font-size: 16px;
+          padding-right: 10px; } }
+    .technologies--list-el .technologies-text .basic-text {
+      display: flex;
+      align-items: center; }
+      @media all and (max-width: 1199px) {
+        .technologies--list-el .technologies-text .basic-text {
+          line-height: 24px; } }
+      @media all and (max-width: 991px) {
+        .technologies--list-el .technologies-text .basic-text {
+          font-size: 14px;
+          line-height: 22px; } }
+      @media all and (max-width: 767px) {
+        .technologies--list-el .technologies-text .basic-text {
+          font-size: 13px;
+          line-height: 18px; } }
+      @media all and (max-width: 575px) {
+        .technologies--list-el .technologies-text .basic-text {
+          display: none; } }
 
 .contact-section .contact-columns {
   display: flex;
