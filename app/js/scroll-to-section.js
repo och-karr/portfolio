@@ -41,4 +41,5 @@ $(".nav").find("a").click(function(e) {
         distance: '100px',
         origin: 'left',
         mobile: true,
+        reset: false,
     });

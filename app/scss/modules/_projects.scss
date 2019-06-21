@@ -1,4 +1,17 @@
 .projects {
+  .close-projects {
+    float: right;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    color: $main-clr;
+    font-family: $main-font;
+    font-size: 14px;
+    padding-right: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+
   .project {
     position: relative;
     display: flex;
