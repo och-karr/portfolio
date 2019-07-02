@@ -8,10 +8,11 @@ const concat = require('gulp-concat');
 const sassLint = require('gulp-sass-lint');
 const babel = require('gulp-babel');
 const autoprefixer = require('gulp-autoprefixer');
+const ghPages = require('gulp-gh-pages');
 
 
 //browserSync settings
-gulp.task('browserSync', function() {
+gulp.task('browserSync', function () {
     browserSync.init({
         server: {
             baseDir: 'dist'
@@ -20,7 +21,7 @@ gulp.task('browserSync', function() {
 })
 
 //RELOAD page when HTML change
-gulp.task('html', function() {
+gulp.task('html', function () {
     return gulp.src('app/*.html')
         .pipe(browserSync.reload({
             stream: true
@@ -28,7 +29,7 @@ gulp.task('html', function() {
 });
 
 //COMPILE scss to css and RELOAD page when SCSS change
-gulp.task('sass', function() {
+gulp.task('sass', function () {
     return gulp.src('app/scss/styles.scss')
         .pipe(sass())
         .pipe(gulp.dest('app/css'))
@@ -38,7 +39,7 @@ gulp.task('sass', function() {
 });
 
 //COMPILE scss to css and RELOAD page when SCSS change
-gulp.task('sass-lint', function() {
+gulp.task('sass-lint', function () {
     return gulp.src('app/scss/**/*.scss')
         .pipe(sassLint())
         .pipe(sassLint.format())
@@ -46,7 +47,7 @@ gulp.task('sass-lint', function() {
 });
 
 //RELOAD page when JS change
-gulp.task('js', function() {
+gulp.task('js', function () {
     return gulp.src('app/js/**/*.js')
         .pipe(browserSync.reload({
             stream: true
@@ -54,13 +55,13 @@ gulp.task('js', function() {
 });
 
 //SAVE HTML file to dist folder when change
-gulp.task('save-html', function() {
+gulp.task('save-html', function () {
     return gulp.src('./app/*.html')
         .pipe(gulp.dest('./dist/'));
 });
 
 //JOIN, MIN and SAVE CSS file to dist folder when change
-gulp.task('save-css', function() {
+gulp.task('save-css', function () {
     return gulp.src('./app/css/*.css')
         .pipe(concat('styles.min.css'))
         .pipe(autoprefixer({
@@ -72,7 +73,7 @@ gulp.task('save-css', function() {
 });
 
 //JOIN, MIN and SAVE JS file to dist folder when change
-gulp.task('save-js', function() {
+gulp.task('save-js', function () {
     return gulp.src('./app/js/*.js')
         .pipe(babel({
             presets: ['@babel/env']
@@ -83,21 +84,26 @@ gulp.task('save-js', function() {
 });
 
 //SAVE IMAGES folder to dist folder when change
-gulp.task('save-images', function() {
+gulp.task('save-images', function () {
     return gulp.src('./app/images/**/*')
         .pipe(gulp.dest('./dist/images'));
 });
 
 //SAVE FONTS folder to dist folder when change
-gulp.task('save-fonts', function() {
+gulp.task('save-fonts', function () {
     return gulp.src('./app/fonts/**/*')
         .pipe(gulp.dest('./dist/fonts'));
 });
 
+gulp.task('deploy', function () {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
+
 //WATCH tasks
-gulp.task('watch', function(){
-    gulp.watch(['app/*.html', 'app/scss/**/*.scss', 'app/js/**/*.js', './app/images/**/*' ], gulp.series(['html', 'sass', 'js', 'save-html', 'save-css', 'save-js', 'save-images', 'save-fonts'])); //'sass-lint',
+gulp.task('watch', function () {
+    gulp.watch(['app/*.html', 'app/scss/**/*.scss', 'app/js/**/*.js', './app/images/**/*'], gulp.series(['html', 'sass', 'js', 'save-html', 'save-css', 'save-js', 'save-images', 'save-fonts'])); //'sass-lint',
 });
 
 //run DEFAULT
-gulp.task('default', gulp.series(['save-html', 'sass', 'save-css' , 'save-js', 'save-images', 'save-fonts', gulp.parallel('browserSync', 'watch')])); //'sass-lint',
+gulp.task('default', gulp.series(['save-html', 'sass', 'save-css', 'save-js', 'save-images', 'save-fonts', gulp.parallel('browserSync', 'watch')])); //'sass-lint',
