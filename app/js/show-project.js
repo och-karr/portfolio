@@ -50,6 +50,7 @@ const closeAllProjects = () => {
     }
 
     closeBtn.addEventListener('click', function() {
+        console.log('aaaaa');
         closeBox();
         addDownArrow();
     })
