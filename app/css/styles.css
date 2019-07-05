@@ -321,7 +321,6 @@ p {
   border: 5px solid #e4e4e4;
   border-radius: 5px;
   margin-bottom: 20px;
-  cursor: pointer;
   background-color: #fff;
   overflow: hidden; }
   .projects .project--arrow {
@@ -335,7 +334,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
     @media all and (max-width: 991px) {
       .projects .project--header {
         padding: 10px 50px; } }
