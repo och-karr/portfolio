@@ -27,7 +27,24 @@ const projTodoReact = document.getElementById('proj-todo-react');
 const projTodoList = document.getElementById('proj-todo-list');
 const projStopwatch = document.getElementById('proj-stopwatch');
 
+const techHtml = document.getElementById('tech-html');
+const techCss = document.getElementById('tech-css');
+const techSass = document.getElementById('tech-sass');
+const techJs = document.getElementById('tech-js');
+const techBootstrap = document.getElementById('tech-bootstrap');
+const techJquery = document.getElementById('tech-jquery');
+const techGulp = document.getElementById('tech-gulp');
+const techAjax = document.getElementById('tech-ajax');
+const techReact = document.getElementById('tech-react');
+const techShopware = document.getElementById('tech-shopware');
+const techAvocode = document.getElementById('tech-avocode');
+const techJira = document.getElementById('tech-jira');
+const techGit = document.getElementById('tech-git');
+
+const contactData = document.getElementById('contact-data');
+
 const names = [
+  //pl
   {
     links: {
       start: 'Start',
@@ -82,8 +99,27 @@ const names = [
         można usuwać i zapisują się one w pamięci lokalnej.`,
       stopwatch: `Projekt stopera napisany z wykorzystaniem składni ES6. Stoper posiada funkcje, 
         które go uruchamiają, zatrzymują, resetują, a także dodają czas do listy i czyszczą tą listę.`
+    },
+    tech: {
+      html: 'Specyfikacja 5. Dobrze radzę sobie w HTML, wykorzystuję znaczniki semantyczne, bez problemu tworzę prawidłową strukturę strony.',
+      css: 'CSS podobnie jak HTML, umiem w stopniu bardzo dobrym i czuję się w nim swobodnie.',
+      sass: 'Sassa używam na co dzień w projektach. Nie tylko zagnieżdzenia, ale również zmienne, mixiny i podstawowe funkcje.',
+      js: 'JavaScriptu używam głównie do dodawania funkcjonalności na stronie - radzę sobie z tym bez problemu. Używałam go również do wykonania prostych aplikacji i nadal się rozwijam w tym temacie. Specyfikacja ES6 nie jest mi obca.',
+      bootstrap: ' W swoich projektach wykorzystywałam zarówno elementy jak i komponenty.',
+      jquery: 'Wykorzystywałam do tworzenia interakcji na stronie, a także małych aplikacji np. Kanban Board.',
+      gulp: 'Ten task manager poznałam na stażu i bardzo mi się spodobał. Od tamtego momentu używam go bardzo często.',
+      ajax: 'Ajaxa używałam, aby korzystać z zewnętrznego API.',
+      react: 'Aktualnie kładę duży nacisk na rozwój w tej technologii.',
+      shopware: 'Jest to platforma ecommerce, z którą miałam okazję bliżej się poznać podczas 3-miesięcznego stażu.',
+      avocode: 'Podobnie jak i Photoshop używałam go do analizy projektu graficznego - eksportu plików psd, rozpoznawanie czcionek, kolorów, wymiarów i odległości pomiędzy elementami.',
+      jira: 'Narzędzia, które miałam okazję wykorzystywać podczas stażu.',
+      git: 'W codziennej pracy wykorzystuję ten system kontroli wersji, a swoje repozytoria umieszczam na Githubie.',
+    },
+    contact: {
+      dataTitle: 'Dane kontaktowe'
     }
   },
+  //en
   {
     links: {
       start: 'Start',
@@ -132,6 +168,24 @@ const names = [
          number of tasks per page. Tasks can be deleted and saved in the local memory.`,
       stopwatch: `Project of stopwatch scripted using the ES6 syntax. The stopwatch has functions that 
         start, stop, reset, and add time to the list and clean the list.`
+    },
+    tech: {
+      html: '5 specification. I cope well in HTML, I use semantic tags and create the correct page structure without any problem.',
+      css: 'CSS, like HTML, I know very well and feel that I use it freely.',
+      sass: 'I use Sass every day in projects. Not only nesting, but also variables, mixins and basic functions.',
+      js: 'I use JavaScript mainly to add functionality on the website - I deal with it without any problem. I also used it for simple applications and I\'m still developing in this topic. The ES6 specification is not strange to me.',
+      bootstrap: 'I used both elements and components in my projects.',
+      jquery: 'I used to create interaction on the site, as well as small applications such as Kanban Board.',
+      gulp: 'I got to know this task manager during the internship and I liked it very much. Since then I use it very often.',
+      ajax: 'I used Ajax to use the external API.',
+      react: 'Currently, I place emphasis on development in this technology.',
+      shopware: 'This is an e-commerce platform that I had the opportunity to know during a three-month internship.',
+      avocode: 'Like Photoshop, I used it to analyze a graphic design - export of psd files, recognition of fonts, colors, dimensions and distances between elements.',
+      jira: 'Tools that I had the opportunity to use during the internship.',
+      git: 'In everyday work, I use this version control system, and put my repositories on Github.',
+    },
+    contact: {
+      dataTitle: 'Contact details'
     }
   }
 ]
@@ -161,13 +215,29 @@ const translate = (lang) => {
   projTodoReact.innerHTML = names[lang].projects.todoReact;
   projTodoList.innerHTML = names[lang].projects.todoList;
   projStopwatch.innerHTML = names[lang].projects.stopwatch;
+
+  techHtml.innerHTML = names[lang].tech.html;
+  techCss.innerHTML = names[lang].tech.css;
+  techSass.innerHTML = names[lang].tech.sass;
+  techJs.innerHTML = names[lang].tech.js;
+  techBootstrap.innerHTML = names[lang].tech.bootstrap;
+  techJquery.innerHTML = names[lang].tech.jquery;
+  techGulp.innerHTML = names[lang].tech.gulp;
+  techAjax.innerHTML = names[lang].tech.ajax;
+  techReact.innerHTML = names[lang].tech.react;
+  techShopware.innerHTML = names[lang].tech.shopware;
+  techAvocode.innerHTML = names[lang].tech.avocode;
+  techJira.innerHTML = names[lang].tech.jira;
+  techGit.innerHTML = names[lang].tech.git;
+
+  contactData.innerHTML = names[lang].contact.dataTitle;
 }
 
 btn.addEventListener('click', function () {
   if (isPl === true) {
     translate(1);
     btn.innerHTML = 'PL';
-    alert('This translation is incomplete. Sorry for the inconvenience.')
+    // alert('This translation is incomplete. Sorry for the inconvenience.')
     isPl = false;
   } else {
     translate(0);
