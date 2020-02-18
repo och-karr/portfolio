@@ -43,7 +43,7 @@ h4 {
 p {
   line-height: 28px;
 
-  @media #{$max575} {
+  @media #{$max767} {
     font-size: 14px;
     line-height: 22px;
   }

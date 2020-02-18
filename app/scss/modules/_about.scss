@@ -1,4 +1,43 @@
 .about-me {
+
+  .section--title {
+    width: 100%;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  &__text-container {
+    width: 70%;
+    padding-right: 10px;
+
+    @media #{$max767} {
+      width: 100%;
+    }
+  }
+  &__foto-container {
+    width: 30%;
+
+    @media #{$max767} {
+      width: 100%;
+    }
+  }
+
+  &__foto {
+    width: 100%;
+    max-width: 265px;
+    margin: 0 auto;
+    margin-top: -60px;
+
+    @media #{$max991} {
+      margin-top: 0;
+    }
+
+    @media #{$max767} {
+      max-width: 200px;
+      display: block;
+    }
+
+  }
+  
   &--text {
     text-indent: 4%;
 
