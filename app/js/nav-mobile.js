@@ -16,7 +16,7 @@ function showMenu() {
 
         let width = $(window).width();
 
-        if (width > 575) {
+        if (width > 767) {
             toggleMenu.classList.add("fa-bars");
             toggleMenu.classList.remove("fa-times");
             navList.classList.remove("mobile-open");

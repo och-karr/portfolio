@@ -4,17 +4,31 @@ const btn = document.getElementById('nav-btn');
 
 const linkStart = document.getElementById('link-start');
 const linkAbout = document.getElementById('link-about');
+const linkExperience = document.getElementById('link-experience');
 const linkProjects = document.getElementById('link-projects');
 const linkTech = document.getElementById('link-tech');
 const linkContact = document.getElementById('link-contact');
 
 const titleAbout = document.getElementById('title-about');
+const titleExperience = document.getElementById('title-experience');
 const titleProjects = document.getElementById('title-projects');
 const titleTech = document.getElementById('title-tech');
 const titleContact = document.getElementById('title-contact');
 
 const textAbout1 = document.getElementById('text-about-1');
 const textAbout2 = document.getElementById('text-about-2');
+const textAbout3 = document.getElementById('text-about-3');
+
+const expCompany1 = document.getElementById('exp-company-1');
+const expCompany2 = document.getElementById('exp-company-2');
+const expDate1 = document.getElementById('exp-date-1');
+const exp1a = document.getElementById('exp-1a');
+const exp1b = document.getElementById('exp-1b');
+const exp1c = document.getElementById('exp-1c');
+const exp1d = document.getElementById('exp-1d');
+const exp1e = document.getElementById('exp-1e');
+const exp2a = document.getElementById('exp-2a');
+const exp2b = document.getElementById('exp-2b');
 
 const projLandingPage = document.getElementById('proj-landing-page');
 const projThemeShopware = document.getElementById('proj-theme-shopware');
@@ -49,24 +63,33 @@ const names = [
     links: {
       start: 'Start',
       about: 'O mnie',
+      experience: 'Doświadczenie',
       projects: 'Projekty',
       tech: 'Technologie',
       contact: 'Kontakt'
     },
     about: {
-      text1: `Cześć! Jestem Karolina i mieszkam w Krakowie. Tworzeniem stron 
-        zaczęłam interesować się pod koniec 2017 roku i od tamtej pory rozwijam 
-        swoje umiejętności w tej dziedzinie. Obecnie pogłębiam wiedzę głównie z
-        bardziej złożonych zagadnień języka JavaScript oraz z Reacta.Mam za sobą 
-        pierwsze doświadczenie komercyjne, a aktualnie poszukuję pracy albo stażu.
-        Jestem osobą otwartą na nowe wyzwania i chętną do nauki. Lubię kontakt z 
-        ludźmi, chętnie pomagam innym ale też słucham bardziej doświadczonych osób 
-        i stosuję się do ich rad.`,
-      text2: `Efekty mojej dotychczasowej pracy
-        można zobaczyć na tej stronie. Zapraszam również do odwiedzenia mojego
-        <a class="about-me--text-link" href="https://github.com/och-karr" target="_blank">Githuba</a>.
-        A tutaj możesz zobaczyć moje
-        <a class="about-me--text-link" href="./images/K-Och-Pudlo-CV.pdf" target="_blank">CV</a>.`
+      text1: `Cześć! Jestem Karolina i mieszkam w Krakowie.
+      Przygodę z Front-Endem zaczęłam pod koniec 2017 roku i od tamtej pory rozwijam swoje
+      umiejętności w tej dziedzinie - w tym momencie głównie z Angulara i JavaScriptu. Obecnie pracuję
+      jako Junior Front-End Developer w jednej z
+      krakowskich firm.`,
+      text2: `Prywatnie lubię góry, malowanie obrazów i czytanie książek i
+      żałuję, że doba
+      ma tylko 24 godziny.`,
+      text3: `Zapraszam do kontaktu.`
+    },
+    experience: {
+      expCompany1: `Front-End Developer - Salesmanago`,
+      expCompany2: `Front-End Developer Internship - Virtua`,
+      expDate1: `08.2019 - obecnie`,
+      exp1a: `Tworzenie widoków w AngularJS`,
+      exp1b: `Tworzenie landing pages, formularzy, popupów, sidebarów, ramek rekomendacji - razem z walidacją przy wykorzystaniu HTML, CSS, JS przy zachowaniu responsywności`,
+      exp1c: `Tworzenie mailingów zgodnych z wymaganiami różnych skrzynek mailowych jak gmail, Outlook`,
+      exp1d: `Tworzenie koncepcji maili, popupów, formularzy w programie Photoshop`,
+      exp1e: `Uczestniczenie w rekrutacjach`,
+      exp2a: `Stworzenie responsywnego landing page z wykorzystaniem HTML, Sass, JavaScript oraz task managera Gulp.`,
+      exp2b: `Stworzenie theme dla sklepu internetowego w oparciu o platformę ecommerce - Shopware, wykorzystując Sass, jQuery oraz Gulp.`,
     },
     projects: {
       landingPage: `Projekt responsywnej landing page z wykorzystaniem HTML, Sass, JavaScript 
@@ -124,23 +147,33 @@ const names = [
     links: {
       start: 'Start',
       about: 'About',
+      experience: 'Experience',
       projects: 'Projects',
       tech: 'Technologies',
       contact: 'Contact'
     },
     about: {
-      text1: `Hi! I am Karolina and I live in Krakow. I started to create websites 
-        at the end of 2017 and since then I have been developing my skills in this field. 
-        Currently, I am deepening my knowledge mainly from the more complex issues of JavaScript 
-        and React. I have had my first commercial experience behind me and I am currently 
-        looking for a job or an internship. I am a person open to new challenges and willing 
-        to learn. I like contact with people, I am happy to help others but I also listen to 
-        more experienced people and follow their advice.`,
-      text2: `The effects of my previous work can be seen on 
-        this page. I also invite you to visit my 
-        <a class="about-me--text-link" href="https://github.com/och-karr" target="_blank">Github</a>.
-        <br> And here you can see my 
-        <a class="about-me--text-link" href="./images/K-Och-Pudlo-CV-en.pdf" target="_blank">CV</a>.`
+      text1: `Cześć! Jestem Karolina i mieszkam w Krakowie.
+      Przygodę z Front-Endem zaczęłam pod koniec 2017 roku i od tamtej pory rozwijam swoje
+      umiejętności w tej dziedzinie - w tym momencie głównie z Angulara i JavaScriptu. Obecnie pracuję
+      jako Junior Front-End Developer w jednej z
+      krakowskich firm.`,
+      text2: `Prywatnie lubię góry, malowanie obrazów i czytanie książek i
+      żałuję, że doba
+      ma tylko 24 godziny.`,
+      text3: `Zapraszam do kontaktu.`
+    },
+    experience: {
+      expCompany1: `Front-End Developer - Salesmanago`,
+      expCompany2: `Front-End Developer Internship - Virtua`,
+      expDate1: `08.2019 - obecnie`,
+      exp1a: `Tworzenie widoków w AngularJS`,
+      exp1b: `Tworzenie landing pages, formularzy, popupów, sidebarów, ramek rekomendacji - razem z walidacją przy wykorzystaniu HTML, CSS, JS przy zachowaniu responsywności`,
+      exp1c: `Tworzenie mailingów zgodnych z wymaganiami różnych skrzynek mailowych jak gmail, Outlook`,
+      exp1d: `Tworzenie koncepcji maili, popupów, formularzy w programie Photoshop`,
+      exp1e: `Uczestniczenie w rekrutacjach`,
+      exp2a: `Stworzenie responsywnego landing page z wykorzystaniem HTML, Sass, JavaScript oraz task managera Gulp.`,
+      exp2b: `Stworzenie theme dla sklepu internetowego w oparciu o platformę ecommerce - Shopware, wykorzystując Sass, jQuery oraz Gulp.`,
     },
     projects: {
       landingPage: `Responsive landing page project using HTML, Sass, JavaScript and task manager Gulp.
@@ -193,17 +226,31 @@ const names = [
 const translate = (lang) => {
   linkStart.innerHTML = names[lang].links.start;
   linkAbout.innerHTML = names[lang].links.about;
+  linkExperience.innerHTML = names[lang].links.experience;
   linkProjects.innerHTML = names[lang].links.projects;
   linkTech.innerHTML = names[lang].links.tech;
   linkContact.innerHTML = names[lang].links.contact;
 
   titleAbout.innerHTML = names[lang].links.about;
+  titleExperience.innerHTML = names[lang].links.experience;
   titleProjects.innerHTML = names[lang].links.projects;
   titleTech.innerHTML = names[lang].links.tech;
   titleContact.innerHTML = names[lang].links.contact;
 
   textAbout1.innerHTML = names[lang].about.text1;
   textAbout2.innerHTML = names[lang].about.text2;
+  textAbout3.innerHTML = names[lang].about.text3;
+
+  expCompany1 = names[lang].experience.expCompany1;
+  expCompany2 = names[lang].experience.expCompany2;
+  expDate1 = names[lang].experience.expDate1;
+  exp1a = names[lang].experience.exp1a;
+  exp1b = names[lang].experience.exp1b;
+  exp1c = names[lang].experience.exp1c;
+  exp1d = names[lang].experience.exp1d;
+  exp1e = names[lang].experience.exp1e;
+  exp2a = names[lang].experience.exp2a;
+  exp2b = names[lang].experience.exp2b;
 
   projLandingPage.innerHTML = names[lang].projects.landingPage;
   projThemeShopware.innerHTML = names[lang].projects.themeShopware;

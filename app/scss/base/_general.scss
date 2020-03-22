@@ -28,7 +28,7 @@
 
   &--title {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     @media #{$max767} {
         margin-bottom: 10px;
@@ -62,4 +62,22 @@
 
 .basic-text {
   text-align: justify;
+}
+
+.el {
+  padding-left: 10px;
+  position: relative;
+  padding-bottom: 10px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $main-clr;
+    position: absolute;
+    z-index: -1;
+    left: -7px;
+    top: -5px;
+  }
 }

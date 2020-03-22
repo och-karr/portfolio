@@ -24,7 +24,11 @@ Imports all project style components.
 @import "modules/nav";
 @import "modules/header";
 @import "modules/about";
+@import "modules/experience";
 @import "modules/projects";
 @import "modules/technologies";
 @import "modules/contact";
 @import "modules/footer";
+
+//Libraries
+@import "libraries/slick"
