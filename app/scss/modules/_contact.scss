@@ -22,6 +22,10 @@
           text-align: left;
           padding-top: 30px;
         }
+
+        @media #{$max575} {
+          padding-top: 10px;
+        }
       }
 
       .my-btn-container {
@@ -36,7 +40,7 @@
         }
 
         .my-btn {
-          display: block;
+          display: flex;
           text-align: left;
 
           .contact-icon-description {
@@ -44,6 +48,7 @@
 
             @media #{$max991} {
               font-size: 14px;
+              display: inline-block;
             }
           }
 

@@ -13,6 +13,10 @@
             @media #{$max1199} {
                 padding-right: 30px;
             }
+
+            @media #{$max991} {
+                padding-right: 0;
+            }
         }
 
         @media #{$max991} {
@@ -26,7 +30,7 @@
     }
 
     &__title {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     &__date {

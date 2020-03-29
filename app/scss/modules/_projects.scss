@@ -53,12 +53,7 @@
         display: inline;
 
         @media #{$max991} {
-          font-size: 22px;
           width: 100%;
-        }
-
-        @media #{$max575} {
-          font-size: 18px;
         }
       }
 
@@ -217,17 +212,6 @@
 
   .projects__carousel {
     padding-top: 30px;
-
-    .project--title {
-      @media #{$max991} {
-        font-size: 22px;
-        width: 100%;
-      }
-
-      @media #{$max575} {
-        font-size: 18px;
-      }
-    }
   }
   .carousel {
     position: relative;

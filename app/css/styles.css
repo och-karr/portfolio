@@ -10,7 +10,7 @@ Imports all project style components.
   touch-action: manipulation; }
 
 body {
-  min-width: 380px;
+  min-width: 280px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   overflow-x: hidden;
@@ -33,13 +33,16 @@ h1 {
       font-size: 42px; } }
   @media all and (max-width: 575px) {
     h1 {
-      font-size: 32px; } }
+      font-size: 26px; } }
 
 h2 {
   font-size: 20px;
   font-weight: 500;
   width: 100%;
   text-align: center; }
+  @media all and (max-width: 575px) {
+    h2 {
+      font-size: 18px; } }
 
 h3 {
   padding: 20px;
@@ -51,11 +54,18 @@ h3 {
       font-size: 32px; } }
   @media all and (max-width: 575px) {
     h3 {
-      font-size: 24px; } }
+      font-size: 22px;
+      padding: 10px 0 20px; } }
 
 h4 {
   font-size: 26px;
   font-weight: 500; }
+  @media all and (max-width: 991px) {
+    h4 {
+      font-size: 22px; } }
+  @media all and (max-width: 575px) {
+    h4 {
+      font-size: 16px; } }
 
 p {
   line-height: 28px; }
@@ -86,6 +96,9 @@ p {
 .section {
   margin-bottom: 50px;
   z-index: 1; }
+  @media all and (max-width: 575px) {
+    .section {
+      margin-bottom: 20px; } }
   .section--title {
     position: relative;
     margin-bottom: 30px; }
@@ -328,6 +341,10 @@ p {
     @media all and (max-width: 767px) {
       .about-me__foto-container {
         width: 100%; } }
+    @media all and (max-width: 575px) {
+      .about-me__foto-container {
+        width: 50%;
+        margin: 0 auto; } }
   .about-me__foto {
     width: 100%;
     max-width: 265px;
@@ -357,6 +374,9 @@ p {
     @media all and (max-width: 1199px) {
       .experience__text-container:first-of-type {
         padding-right: 30px; } }
+    @media all and (max-width: 991px) {
+      .experience__text-container:first-of-type {
+        padding-right: 0; } }
   @media all and (max-width: 991px) {
     .experience__text-container {
       width: 100%;
@@ -367,7 +387,7 @@ p {
   padding-bottom: 30px; }
 
 .experience__title {
-  font-size: 20px; }
+  font-size: 16px; }
 
 .experience__date {
   font-size: 14px; }
@@ -418,11 +438,7 @@ p {
       display: inline; }
       @media all and (max-width: 991px) {
         .projects .project--header .project--title {
-          font-size: 22px;
           width: 100%; } }
-      @media all and (max-width: 575px) {
-        .projects .project--header .project--title {
-          font-size: 18px; } }
     .projects .project--header .project--stack {
       font-size: 18px;
       line-height: 40px;
@@ -527,13 +543,6 @@ p {
 
 .projects .projects__carousel {
   padding-top: 30px; }
-  @media all and (max-width: 991px) {
-    .projects .projects__carousel .project--title {
-      font-size: 22px;
-      width: 100%; } }
-  @media all and (max-width: 575px) {
-    .projects .projects__carousel .project--title {
-      font-size: 18px; } }
 
 .projects .carousel {
   position: relative; }
@@ -596,10 +605,6 @@ p {
     @media all and (max-width: 767px) {
       .technologies--list-el {
         height: 90px; } }
-    @media all and (max-width: 575px) {
-      .technologies--list-el {
-        width: 50%;
-        justify-content: center; } }
     .technologies--list-el .technologies-img-container {
       height: 70px;
       width: 70px;
@@ -607,7 +612,11 @@ p {
       display: inline-block; }
       @media all and (max-width: 767px) {
         .technologies--list-el .technologies-img-container {
-          width: 70px;
+          width: 60px;
+          margin-right: 10px; } }
+      @media all and (max-width: 575px) {
+        .technologies--list-el .technologies-img-container {
+          width: 40px;
           margin-right: 10px; } }
       .technologies--list-el .technologies-img-container .technologies-img {
         width: 100%;
@@ -667,6 +676,9 @@ p {
           font-size: 18px;
           text-align: left;
           padding-top: 30px; } }
+      @media all and (max-width: 575px) {
+        .contact-section .contact-columns .my-data .my-data-title {
+          padding-top: 10px; } }
     .contact-section .contact-columns .my-data .my-btn-container {
       padding-left: 80px; }
       @media all and (max-width: 991px) {
@@ -676,13 +688,14 @@ p {
         .contact-section .contact-columns .my-data .my-btn-container {
           padding-left: 10px; } }
       .contact-section .contact-columns .my-data .my-btn-container .my-btn {
-        display: block;
+        display: flex;
         text-align: left; }
         .contact-section .contact-columns .my-data .my-btn-container .my-btn .contact-icon-description {
           padding-left: 20px; }
           @media all and (max-width: 991px) {
             .contact-section .contact-columns .my-data .my-btn-container .my-btn .contact-icon-description {
-              font-size: 14px; } }
+              font-size: 14px;
+              display: inline-block; } }
         .contact-section .contact-columns .my-data .my-btn-container .my-btn .fab,
         .contact-section .contact-columns .my-data .my-btn-container .my-btn .fas {
           width: 30px;
@@ -709,7 +722,10 @@ p {
   height: 50px;
   font-size: 16px;
   color: #fff;
-  background-color: #14ad7f; }
+  background-color: #14ad7f;
+  padding: 0 15px; }
+  .footer .footer-text {
+    text-align: center; }
 
 /* Slider */
 .slick-slider {

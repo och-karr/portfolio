@@ -23,8 +23,8 @@
       }
 
       @media #{$max575} {
-        width: 50%;
-        justify-content: center;
+      //   width: 50%;
+      //   justify-content: center;
       }
 
       .technologies-img-container {
@@ -34,7 +34,12 @@
         display: inline-block;
 
         @media #{$max767} {
-          width: 70px;
+          width: 60px;
+          margin-right: 10px;
+        }
+
+        @media #{$max575} {
+          width: 40px;
           margin-right: 10px;
         }
 
