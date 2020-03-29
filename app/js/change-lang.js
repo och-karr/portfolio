@@ -27,6 +27,30 @@ const exp1e = document.getElementById('exp-1e');
 const exp2a = document.getElementById('exp-2a');
 const exp2b = document.getElementById('exp-2b');
 
+const projHotelPage = document.getElementById('proj-hotel-page');
+const projValidForm = document.getElementById('proj-valid-form');
+const projLandingPage = document.getElementById('proj-landing-page');
+const projThemeShopware = document.getElementById('proj-theme-shopware');
+const projSmoothieWebpage = document.getElementById('proj-smoothie-webpage');
+const projKanbanBoard = document.getElementById('proj-kanban-board');
+const projRockPaperScissors = document.getElementById('proj-rock-paper-scissors');
+const projRandomQuote = document.getElementById('proj-random-quote');
+const projCountrySearch = document.getElementById('proj-country-search');
+const projTodoReact = document.getElementById('proj-todo-react');
+// const projTodoList = document.getElementById('proj-todo-list');
+const projStopwatch = document.getElementById('proj-stopwatch');
+
+const projectsScreens = document.getElementById('projects-screens');
+
+const techLangs = document.getElementById('tech-languages');
+const techLangsText = document.getElementById('tech-languages-text');
+const techFrames = document.getElementById('tech-frames');
+const techFramesText = document.getElementById('tech-frames-text');
+const techPrograms = document.getElementById('tech-programs');
+const techProgramsText = document.getElementById('tech-programs-text');
+
+const contactData = document.getElementById('contact-data');
+
 const names = [
   {
     links: {
@@ -60,6 +84,56 @@ const names = [
       exp2a: `Stworzenie responsywnego landing page z wykorzystaniem HTML, Sass, JavaScript oraz task managera Gulp.`,
       exp2b: `Stworzenie theme dla sklepu internetowego w oparciu o platformę ecommerce - Shopware, wykorzystując Sass, jQuery oraz Gulp.`,
     },
+    projects: {
+      hotelPage: `Projekt responsywnej landing page z wykorzystaniem HTML, Sass, JavaScript oraz task managera Gulp.`,
+      validForm: `Projekt formularza z obszerną walidacją napisaną w JavaScript. Wszystko jest napisane w jednym pliku ponieważ było to odgórne wymaganie. Formularz posiada customowy kalendarz.`,
+      landingPage: `Projekt responsywnej landing page z wykorzystaniem HTML, Sass, JavaScript 
+        oraz task managera Gulp. W projekcie wykonałam dwupoziomowe menu, stylowanie elementów 
+        odtwarzacza mp3 oraz dodałam karuzelę wykorzystując bibliotekę slick. Wykonałam również
+         podstawową walidację formularza oraz zapisywanie maili do bazy danych Firebase.`,
+      themeShopware: `Theme dla sklepu internetowego z wykorzystaniem platformy ecommerce - 
+        Shopware, wykorzystując Sass, jQuery oraz Gulp. Oprócz nadania styli dla strony głównej 
+        oraz strony kategorii utworzyłam plugin ze spersonalizowanym elementem „shopping-world”. 
+        W projekcie zachowane było podejście RWD.`,
+      smoothieWebpage: `
+      Projekt responsywnej strony z wykorzystaniem HTML, Sass, JavaScript oraz task managera Gulp. 
+        Wykorzystana była również biblioteka Slick do wykonania karuzeli. Samodzielnie zaprojektowałam 
+        wygląd strony, wykonałam podstawową walidację formularza oraz zapisywanie maili do bazy danych 
+        Firebase.`,
+      kanbanBoard: `Projekt tablicy z kolumnami, które zawierają karteczki. Karteczki można przenosić 
+        pomiędzy kolumnami, edytować, zmieniać im kolor. Projekt napisany z wykorzystaniem składni 
+        jQuery i programowania obiektowego.`,
+      rockPaperScissors: `Gra napisana w języku JavaScript. Do wystylowania gry użyty był głównie 
+        Bootstrap. Aplikacja pozwala zagrać w popularną grę razem z Komputerem.`,
+      randomQuote: `Aplikacja losująca cytaty pobierane z zewnętrznego API. Cytaty można udostępnić
+         na twitterze - wybrano tylko te, które mają do 140 znaków.`,
+      countrySearch: `Wyszukiwarka krajów napisana w jQuery. Informacje o krajach są pobierane 
+        z zewnętrznego API.`,
+      todoReact: `Projekt listy zadań wykonanej w React. Oprócz dodawania zadań, można je usuwać 
+        i odznaczać. Poza tym zadania są liczone. Projekt wykonany przy użyciu create-react-app.`,
+      todoList: `Projekt listy zadań wykonanej w JavaScripcie. Zadaniom można nadać priorytet. 
+        Listę zadań można sortować po nazwie lub statusie wykonania. W projekcie wykonana została 
+        paginacja, dzięki której można wyświetlać ograniczoną ilość zadań na stronę. Zadania 
+        można usuwać i zapisują się one w pamięci lokalnej.`,
+      stopwatch: `Projekt stopera napisany z wykorzystaniem składni ES6. Stoper posiada funkcje, 
+        które go uruchamiają, zatrzymują, resetują, a także dodają czas do listy i czyszczą tą listę.`
+    },
+    titles: {
+      projectsScreens: `Przykładowe projekty wykonane podczas mojej pracy (screeny)`
+    },
+
+    tech: {
+      langs: `Języki`,
+      langsText: `W mojej pracy dotychczas najczęściej używałam HTMLa, CSSa i JavaScriptu więc w tych technologiach czuję się najlepiej. Używałam również preprocessora Sass oraz metodologii BEM.`,
+      frames: `Frameworki i biblioteki`,
+      framesText: `Obecnie jestem w zespole, w którym używam AngularJS. Uczestniczyłam również w kilkudniowych warsztatach z podstaw Angulara w wersji 6 i chcę poszerzać swoją wiedzę w tym zakresie. Z Reacta przerobiłam parę kursów i stworzyłam małe projekty ale chwilowo nie mam czasu na rozwój w tej technologii, mimo to nie wykluczam tego w przyszłości.`,
+      programs: `Technologie i programy`,
+      programsText: `W swojej pracy miałam też okazję tworzyć koncepcje w Photoshopie. Dodatkowo używałam Gulpa i tworzyłam theme dla projektu w Shopware (platforma ecommerce). W pracy używam Jiry i pracuję w zespole wykorzystując Gita i Bitbucket.`
+    },
+
+    contact: {
+      dataTitle: 'Dane kontaktowe'
+    }
   },
 
   //en
@@ -89,6 +163,51 @@ const names = [
       exp2a: `Creating a responsive landing page using HTML, Sass, JavaScript and Gulp task manager`,
       exp2b: `Creating a theme for an online store based on e-commerce platform - Shopware, using Sass, jQuery and Gulp`,
     },
+    projects: {
+      hotelPage: `Responsive landing page written using HTML, Sass, JavaScript and Gulp task manager.`,
+      validForm: `Form design with extensive validation written in JavaScript. Everything is written in one file because it was a top requirement. The form has a custom calendar.`,
+      landingPage: `Responsive landing page project using HTML, Sass, JavaScript and task manager Gulp.
+         In the project I made a two-level menu, styling the elements of an mp3 player and added a carousel
+          using the slick library. I also made basic form validation and saving e-mails to the 
+          Firebase database.`,
+      themeShopware: `Theme for a store using the ecommerce platform - Shopware, using Sass, jQuery and Gulp. 
+        In addition to giving styles for the main page and category page, I created a plugin with a personalized 
+        shopping-world element. The RWD approach was preserved in the project.`,
+      smoothieWebpage: `Responsive landing page using HTML, Sass, JavaScript and Gulp task manager. The Slick
+         library was also used to make the carousel. I designed the look of the page myself, made basic validation
+        of the form and saved e-mails to the Firebase database.`,
+      kanbanBoard: `Project of a table with columns that contain sticky notes. Sticky notes can be moved between
+         columns, edited, and changed color. Project scripted using jQuery syntax and object-oriented programming.`,
+      rockPaperScissors: `A game scripted in JavaScript. The Bootstrap was used to give the website a look. 
+      The application allows you to play a popular game with the Computer.`,
+      randomQuote: `An application that randomizes quotes retrieved from an external API. Quotes can be shared
+         on twitter - only those that have up to 140 characters have been selected.`,
+      countrySearch: `Country search engine scripted in jQuery. Country information is retrieved from an 
+        external API.`,
+      todoReact: `Todo list made in React. In addition to adding tasks, you can delete and uncheck them. 
+        Moreover, tasks are counted. A project made using the create-react-app.`,
+      todoList: `Todo list project scripted in JavaScript. Tasks can be given priority. You can sort the
+         task list by the name or the execution status. The pagination allows you to display a limited 
+         number of tasks per page. Tasks can be deleted and saved in the local memory.`,
+      stopwatch: `Project of stopwatch scripted using the ES6 syntax. The stopwatch has functions that 
+        start, stop, reset, and add time to the list and clean the list.`
+    },
+    titles: {
+      projectsScreens: `Sample projects made during my work (screenshots)`
+    },
+
+    tech: {
+      langs: `Languages`,
+      langsText: `In my work so far I have used HTML, CSS and JavaScript so I feel the best in these technologies. In my work I also used the Sass preprocessor and BEM methodology.`,
+      frames: `Frameworks and libraries`,
+      framesText: `I am currently in a team where I use AngularJS. I also attended the Angular basics workshop in version 6 and I want to broaden my knowledge in this area. With React I have completed several courses and created small projects but at the moment I do not have time to develop in this technology, although I do not exclude it in the future.`,
+      programs: `Technologies and programs`,
+      programsText: `In my work I also had the opportunity to create concepts in Photoshop. In addition, I used Gulp and created a theme for the project in Shopware (ecommerce platform). On a daily basis I work in a team, use Jira, Git and Bitbucket.`
+    },
+
+    contact: {
+      dataTitle: 'Contact details'
+    }
   }
 ]
 
@@ -121,7 +240,29 @@ const translate = (lang) => {
   exp2a.innerHTML = names[lang].experience.exp2a;
   exp2b.innerHTML = names[lang].experience.exp2b;
 
-  
+  projHotelPage.innerHTML = names[lang].projects.hotelPage;
+  projValidForm.innerHTML = names[lang].projects.validForm;
+  projLandingPage.innerHTML = names[lang].projects.landingPage;
+  projThemeShopware.innerHTML = names[lang].projects.themeShopware;
+  projSmoothieWebpage.innerHTML = names[lang].projects.smoothieWebpage;
+  projKanbanBoard.innerHTML = names[lang].projects.kanbanBoard;
+  projRockPaperScissors.innerHTML = names[lang].projects.rockPaperScissors;
+  projRandomQuote.innerHTML = names[lang].projects.randomQuote;
+  projCountrySearch.innerHTML = names[lang].projects.countrySearch;
+  projTodoReact.innerHTML = names[lang].projects.todoReact;
+  // projTodoList.innerHTML = names[lang].projects.todoList;
+  projStopwatch.innerHTML = names[lang].projects.stopwatch;
+
+  projectsScreens.innerHTML = names[lang].titles.projectsScreens;
+
+  techLangs.innerHTML = names[lang].tech.langs;
+  techLangsText.innerHTML = names[lang].tech.langsText
+  techFrames.innerHTML = names[lang].tech.frames;
+  techFramesText.innerHTML = names[lang].tech.framesText;
+  techPrograms.innerHTML = names[lang].tech.programs;
+  techProgramsText.innerHTML = names[lang].tech.programsText;
+
+  contactData.innerHTML = names[lang].contact.dataTitle;
 }
 
 let isPl = true;
