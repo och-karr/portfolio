@@ -2,11 +2,14 @@
   &::after {
     content: "";
     display: inline-block;
-    background-color: $main-clr;
+    // background-color: $main-clr;
+    background-image: url('../../images/bcg.jpg');
     transform: rotate(45deg);
     z-index: -5;
     width: 600px;
     height: 600px;
+    background-size: 40%;
+    background-position: left;
   }
 
   position: absolute;
@@ -34,11 +37,14 @@
   &::after {
     content: "";
     display: inline-block;
-    background-color: $main-clr;
+    // background-color: $main-clr;
+    background-image: url('../../images/bcg.jpg');
     transform: rotate(45deg);
     z-index: -5;
     width: 600px;
     height: 600px;
+    background-size: 40%;
+    background-position: left;
   }
 
   position: absolute;

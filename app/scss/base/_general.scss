@@ -26,8 +26,17 @@
   margin-bottom: 50px;
   z-index: 1;
 
+  @media #{$max767} {
+    background-color: rgba(255, 255, 255, 0.64);
+    padding: 15px;
+    border-radius: 20px;
+  }
+
   @media #{$max575} {
     margin-bottom: 20px;
+    background: none;
+    padding: 0;
+    border-radius: 0;
   }
 
   &--title {
