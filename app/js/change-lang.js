@@ -24,9 +24,12 @@ const exp1b = document.getElementById('exp-1b');
 const exp1c = document.getElementById('exp-1c');
 const exp1d = document.getElementById('exp-1d');
 const exp1e = document.getElementById('exp-1e');
+const exp1f = document.getElementById('exp-1f');
+const exp1g = document.getElementById('exp-1g');
 const exp2a = document.getElementById('exp-2a');
 const exp2b = document.getElementById('exp-2b');
 
+const projPricingPlan = document.getElementById('proj-pricing-plan');
 const projHotelPage = document.getElementById('proj-hotel-page');
 const projValidForm = document.getElementById('proj-valid-form');
 const projLandingPage = document.getElementById('proj-landing-page');
@@ -76,16 +79,18 @@ const names = [
       expCompany1: `Front-End Developer - Salesmanago`,
       expCompany2: `Front-End Developer Internship - Virtua`,
       expDate1: `08.2019 - obecnie`,
-      exp1a: `Tworzenie widoków w AngularJS`,
-      exp1b: `Tworzenie landing pages, formularzy, popupów, sidebarów, ramek rekomendacji - razem z walidacją przy wykorzystaniu HTML, CSS, JS przy zachowaniu responsywności`,
+      exp1g: `Tworzenie widoków w AngularJS - dashboardy Integracja z GoogleAds i Adform oraz Deep Behavioural Profiling w aplikacji Salesmanago`,
+      exp1f: `Bieżące prace związane z utrzymywaniem kodu i poprawą błędów w aplikacji Salesmanago`,
+      exp1e: `Praca w zespole, code review`,
+      exp1d: `Tworzenie landing pages, formularzy, popupów, sidebarów, ramek rekomendacji - razem z walidacją przy wykorzystaniu HTML, CSS, JS przy zachowaniu responsywności`,
       exp1c: `Tworzenie mailingów zgodnych z wymaganiami różnych skrzynek mailowych jak gmail, Outlook`,
-      exp1d: `Tworzenie koncepcji maili, popupów, formularzy w programie Photoshop`,
-      exp1e: `Uczestniczenie w rekrutacjach`,
+      exp1b: `Tworzenie koncepcji maili, popupów, formularzy w programie Photoshop`,
+      exp1a: `Uczestniczenie w rekrutacjach`,
       exp2a: `Stworzenie responsywnego landing page z wykorzystaniem HTML, Sass, JavaScript oraz task managera Gulp.`,
       exp2b: `Stworzenie theme dla sklepu internetowego w oparciu o platformę ecommerce - Shopware, wykorzystując Sass, jQuery oraz Gulp.`,
     },
     projects: {
-      hotelPage: `Projekt responsywnej landing page z wykorzystaniem HTML, Sass, JavaScript oraz task managera Gulp.`,
+      pricingPlan: `Projekt wykorzystujący programowanie obiektowe. Stworzony z myślą o łatwiości edycji - aby dodać nową kartę wystarczy skopiować element 'li' w html-u.`,
       validForm: `Projekt formularza z obszerną walidacją napisaną w JavaScript. Wszystko jest napisane w jednym pliku ponieważ było to odgórne wymaganie. Formularz posiada customowy kalendarz.`,
       landingPage: `Projekt responsywnej landing page z wykorzystaniem HTML, Sass, JavaScript 
         oraz task managera Gulp. W projekcie wykonałam dwupoziomowe menu, stylowanie elementów 
@@ -155,15 +160,18 @@ const names = [
       expCompany1: `Front-End Developer - Salesmanago`,
       expCompany2: `Staż Front-End Developer - Virtua`,
       expDate1: `08.2019 - till now`,
-      exp1a: `Creating views in the AngularJS framework`,
-      exp1b: `Creating responsive landing pages, forms, pop-ups, sidebars, recommendation frames - with validation using HTML, CSS, JS`,
+      exp1g: `Creating views in the AngularJS framework - Integration with GoogleAds and Adform and Deep Behavioural Profiling dashboards in Salesmanago application`,
+      exp1f: `Ongoing work related to the maintenance of the code and the bugs fixing in the Salesmanago application`,
+      exp1e: `Team work, code review`,
+      exp1d: `Creating responsive landing pages, forms, pop-ups, sidebars, recommendation frames - with validation using HTML, CSS, JS`,
       exp1c: `Creating mailings as required by the various mailboxes such as Gmail, Outlook`,
-      exp1d: `Designing e-mails, pop-ups, forms concepts in Photoshop`,
-      exp1e: `Participation in recruitment`,
+      exp1b: `Designing e-mails, pop-ups, forms concepts in Photoshop`,
+      exp1a: `Participation in recruitment`,
       exp2a: `Creating a responsive landing page using HTML, Sass, JavaScript and Gulp task manager`,
       exp2b: `Creating a theme for an online store based on e-commerce platform - Shopware, using Sass, jQuery and Gulp`,
     },
     projects: {
+      pricingPlan: `Project using object oriented programming. Created for ease of editing - to add a new tab, just copy the 'li' element in the html.`,
       hotelPage: `Responsive landing page written using HTML, Sass, JavaScript and Gulp task manager.`,
       validForm: `Form design with extensive validation written in JavaScript. Everything is written in one file because it was a top requirement. The form has a custom calendar.`,
       landingPage: `Responsive landing page project using HTML, Sass, JavaScript and task manager Gulp.
@@ -237,9 +245,12 @@ const translate = (lang) => {
   exp1c.innerHTML = names[lang].experience.exp1c;
   exp1d.innerHTML = names[lang].experience.exp1d;
   exp1e.innerHTML = names[lang].experience.exp1e;
+  exp1f.innerHTML = names[lang].experience.exp1f;
+  exp1g.innerHTML = names[lang].experience.exp1g;
   exp2a.innerHTML = names[lang].experience.exp2a;
   exp2b.innerHTML = names[lang].experience.exp2b;
 
+  projPricingPlan.innerHTML = names[lang].projects.pricingPlan;
   projHotelPage.innerHTML = names[lang].projects.hotelPage;
   projValidForm.innerHTML = names[lang].projects.validForm;
   projLandingPage.innerHTML = names[lang].projects.landingPage;
