@@ -67,10 +67,8 @@ const names = [
     about: {
       text1: `Cześć! Jestem Karolina i mieszkam w Krakowie.
       Przygodę z Front-Endem zaczęłam pod koniec 2017 roku i od tamtej pory rozwijam swoje
-      umiejętności w tej dziedzinie - w tym momencie głównie z Angulara i JavaScriptu. Obecnie pracuję
-      jako Junior Front-End Developer w jednej z
-      krakowskich firm.`,
-      text2: `Prywatnie lubię góry, malowanie obrazów i czytanie książek i
+      umiejętności w tej dziedzinie - w tym momencie głównie z Angulara i JavaScriptu.`,
+      text2: `Prywatnie lubię góry, planszówki, malowanie obrazów i czytanie książek i
       żałuję, że doba
       ma tylko 24 godziny.`,
       text3: `Zapraszam do kontaktu.`
@@ -131,7 +129,7 @@ const names = [
       langs: `Języki`,
       langsText: `W mojej pracy dotychczas najczęściej używałam HTMLa, CSSa i JavaScriptu więc w tych technologiach czuję się najlepiej. Używałam również preprocessora Sass oraz metodologii BEM.`,
       frames: `Frameworki i biblioteki`,
-      framesText: `Obecnie jestem w zespole, w którym używam AngularJS. Uczestniczyłam również w kilkudniowych warsztatach z podstaw Angulara w wersji 6 i chcę poszerzać swoją wiedzę w tym zakresie. Z Reacta przerobiłam parę kursów i stworzyłam małe projekty ale chwilowo nie mam czasu na rozwój w tej technologii, mimo to nie wykluczam tego w przyszłości.`,
+      framesText: `W mojej poprzedniej pracy używałam AngularJS. Uczestniczyłam również w kilkudniowych warsztatach z podstaw Angulara w wersji 6 i chcę poszerzać swoją wiedzę w tym zakresie. Z Reacta przerobiłam parę kursów i stworzyłam małe projekty ale chwilowo nie mam czasu na rozwój w tej technologii, mimo to nie wykluczam tego w przyszłości.`,
       programs: `Technologie i programy`,
       programsText: `W swojej pracy miałam też okazję tworzyć koncepcje w Photoshopie. Dodatkowo używałam Gulpa i tworzyłam theme dla projektu w Shopware (platforma ecommerce). W pracy używam Jiry i pracuję w zespole wykorzystując Gita i Bitbucket.`
     },
@@ -152,8 +150,8 @@ const names = [
       contact: 'Contact'
     },
     about: {
-      text1: `Hi! I am Karolina and I live in Krakow. I began my adventure with Front-End at the end of 2017 and since then I have been developing my skills in this field - at this time mainly from Angular and JavaScript. I currently work as a Junior Front-End Developer in one of the Krakow companies.`,
-      text2: `Privately, I like mountains, painting pictures and reading books and I regret that the day has only 24 hours.`,
+      text1: `Hi! I am Karolina and I live in Krakow. I began my adventure with Front-End at the end of 2017 and since then I have been developing my skills in this field - at this time mainly from Angular and JavaScript.`,
+      text2: `Privately, I like mountains, board games, painting pictures and reading books and I regret that the day has only 24 hours.`,
       text3: `Feel free to contact me.`
     },
     experience: {
@@ -208,7 +206,7 @@ const names = [
       langs: `Languages`,
       langsText: `In my work so far I have used HTML, CSS and JavaScript so I feel the best in these technologies. In my work I also used the Sass preprocessor and BEM methodology.`,
       frames: `Frameworks and libraries`,
-      framesText: `I am currently in a team where I use AngularJS. I also attended the Angular basics workshop in version 6 and I want to broaden my knowledge in this area. With React I have completed several courses and created small projects but at the moment I do not have time to develop in this technology, although I do not exclude it in the future.`,
+      framesText: `I my previous work I was using AngularJS. I also attended the Angular basics workshop in version 6 and I want to broaden my knowledge in this area. With React I have completed several courses and created small projects but at the moment I do not have time to develop in this technology, although I do not exclude it in the future.`,
       programs: `Technologies and programs`,
       programsText: `In my work I also had the opportunity to create concepts in Photoshop. In addition, I used Gulp and created a theme for the project in Shopware (ecommerce platform). On a daily basis I work in a team, use Jira, Git and Bitbucket.`
     },
