@@ -33,6 +33,7 @@ const projPricingPlan = document.getElementById('proj-pricing-plan');
 const projHotelPage = document.getElementById('proj-hotel-page');
 const projValidForm = document.getElementById('proj-valid-form');
 const projLandingPage = document.getElementById('proj-landing-page');
+const projLambdaRestaurant = document.getElementById('proj-lambda-restaurant');
 const projThemeShopware = document.getElementById('proj-theme-shopware');
 const projSmoothieWebpage = document.getElementById('proj-smoothie-webpage');
 const projKanbanBoard = document.getElementById('proj-kanban-board');
@@ -94,6 +95,8 @@ const names = [
         oraz task managera Gulp. W projekcie wykonałam dwupoziomowe menu, stylowanie elementów 
         odtwarzacza mp3 oraz dodałam karuzelę wykorzystując bibliotekę slick. Wykonałam również
          podstawową walidację formularza oraz zapisywanie maili do bazy danych Firebase.`,
+      lambdaRestaurant: `Projekt strony z wykorzystaniem HTML, Sass, JavaScript oraz task
+        managera Gulp wykonanej w ramach projektu Rolling Scopes School organizowanej przez Epam.`,
       themeShopware: `Theme dla sklepu internetowego z wykorzystaniem platformy ecommerce - 
         Shopware, wykorzystując Sass, jQuery oraz Gulp. Oprócz nadania styli dla strony głównej 
         oraz strony kategorii utworzyłam plugin ze spersonalizowanym elementem „shopping-world”. 
@@ -176,6 +179,7 @@ const names = [
          In the project I made a two-level menu, styling the elements of an mp3 player and added a carousel
           using the slick library. I also made basic form validation and saving e-mails to the 
           Firebase database.`,
+      lambdaRestaurant: `Website created using HTML, Sass, JavaScript and the Gulp task manager as a part of the Rolling Scopes School project organized by Epam.`,
       themeShopware: `Theme for a store using the ecommerce platform - Shopware, using Sass, jQuery and Gulp. 
         In addition to giving styles for the main page and category page, I created a plugin with a personalized 
         shopping-world element. The RWD approach was preserved in the project.`,
@@ -252,6 +256,7 @@ const translate = (lang) => {
   projHotelPage.innerHTML = names[lang].projects.hotelPage;
   projValidForm.innerHTML = names[lang].projects.validForm;
   projLandingPage.innerHTML = names[lang].projects.landingPage;
+  projLambdaRestaurant.innerHTML = names[lang].projects.lambdaRestaurant;
   projThemeShopware.innerHTML = names[lang].projects.themeShopware;
   projSmoothieWebpage.innerHTML = names[lang].projects.smoothieWebpage;
   projKanbanBoard.innerHTML = names[lang].projects.kanbanBoard;
