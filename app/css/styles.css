@@ -731,7 +731,7 @@ p {
   height: 50px;
   font-size: 16px;
   color: #fff;
-  background-image: url("../../images/bcg2.jpg");
+  background-image: url("./../images/bcg2.jpg");
   background-size: contain;
   padding: 0 15px; }
   .footer .footer-text {
