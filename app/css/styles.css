@@ -11,7 +11,7 @@ Imports all project style components.
 
 body {
   min-width: 280px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 16px;
   overflow-x: hidden;
   color: #333333; }
@@ -27,7 +27,8 @@ h1 {
   font-size: 52px;
   font-weight: 500;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  font-family: "Poppins", sans-serif; }
   @media all and (max-width: 767px) {
     h1 {
       font-size: 42px; } }
@@ -39,7 +40,8 @@ h2 {
   font-size: 20px;
   font-weight: 500;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  font-family: "Poppins", sans-serif; }
   @media all and (max-width: 575px) {
     h2 {
       font-size: 18px; } }
@@ -48,7 +50,8 @@ h3 {
   padding: 20px;
   font-size: 40px;
   text-align: center;
-  font-weight: 500; }
+  font-weight: 500;
+  font-family: "Poppins", sans-serif; }
   @media all and (max-width: 767px) {
     h3 {
       font-size: 32px; } }
@@ -59,7 +62,8 @@ h3 {
 
 h4 {
   font-size: 26px;
-  font-weight: 500; }
+  font-weight: 600;
+  font-family: "Poppins", sans-serif; }
   @media all and (max-width: 991px) {
     h4 {
       font-size: 22px; } }
@@ -247,7 +251,7 @@ p {
       .nav--icons-icon .nav-btn {
         background-color: transparent;
         border: none;
-        font-family: "Poppins", sans-serif;
+        font-family: "Libre Franklin", sans-serif;
         font-size: 18px;
         font-weight: bold;
         cursor: pointer;
@@ -291,7 +295,7 @@ p {
       .nav--list-link .link-name {
         position: relative;
         line-height: 22px;
-        font-family: "Poppins", sans-serif; }
+        font-family: "Libre Franklin", sans-serif; }
         .nav--list-link .link-name::after {
           content: "";
           height: 1px;
@@ -330,6 +334,8 @@ p {
   @media all and (max-width: 575px) {
     .header {
       padding: 0 15px; } }
+  .header--name-main {
+    font-family: "Poppins", sans-serif; }
   .header--name-sub-add {
     color: #45c96a; }
 
@@ -396,7 +402,8 @@ p {
   padding-bottom: 30px; }
 
 .experience__title {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: "Libre Franklin", sans-serif; }
 
 .experience__date {
   font-size: 14px; }
@@ -407,7 +414,7 @@ p {
   border: none;
   background-color: transparent;
   color: #45c96a;
-  font-family: "Poppins", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 14px;
   padding-right: 5px;
   outline: none;

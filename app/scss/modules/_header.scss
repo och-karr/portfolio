@@ -10,6 +10,9 @@
   }
 
   &--name {
+    &-main {
+      font-family: $headers-font;
+    }
 
     &-sub {
       &-add {
