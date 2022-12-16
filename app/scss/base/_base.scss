@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    touch-action: manipulation;
+}
+
+body {
+    min-width: 280px;
+    font-family: $main-font;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: $dark-clr;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-clr;
+}

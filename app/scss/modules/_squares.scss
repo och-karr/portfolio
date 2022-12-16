@@ -1,0 +1,73 @@
+.square1 {
+  &::after {
+    content: "";
+    display: inline-block;
+    // background-color: $main-clr;
+    background-image: url('./../images/bcg.jpg');
+    transform: rotate(45deg);
+    z-index: -5;
+    width: 600px;
+    height: 600px;
+    background-size: 40%;
+    background-position: left;
+  }
+
+  position: absolute;
+  // top: 6%;
+  top: 210px;
+  right: -350px;
+
+  @media #{$max991} {
+    top: 290px;
+    right: -490px;
+  }
+
+  @media #{$max767} {
+    top: 237px;
+  }
+
+  @media #{$max575} {
+    top: 104px;
+    // top: 6%;
+    right: -550px;
+  }
+}
+
+.square2 {
+  &::after {
+    content: "";
+    display: inline-block;
+    // background-color: $main-clr;
+    background-image: url('./../images/bcg.jpg');
+    transform: rotate(45deg);
+    z-index: -5;
+    width: 600px;
+    height: 600px;
+    background-size: 40%;
+    background-position: left;
+  }
+
+  position: absolute;
+  // top: 46%;
+  top: 1728px;
+  left: -350px;
+
+  @media #{$max1199} {
+    left: -450px;
+  }
+
+  @media #{$max991} {
+    top: 1923px;
+    left: -493px;
+  }
+
+  @media #{$max767} {
+    top: 1945px;
+    left: -550px;
+  }
+
+  @media #{$max575} {
+    top: 1472px;
+    left: -550px;
+  }
+}

@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 16px;
+  color: $white-clr;
+  // background-color: $main-clr-dark;
+  background-image: url('./../images/bcg2.jpg');
+  background-size: contain;
+  padding: 0 15px;
+
+  .footer-text {
+    text-align: center;
+  }
+}

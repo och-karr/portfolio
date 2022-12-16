@@ -1,0 +1,99 @@
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.main {
+  width: 75%;
+  max-width: 1200px;
+  margin: auto;
+
+  @media #{$max1199} {
+    width: 100%;
+    padding: 0 80px;
+  }
+
+  @media #{$max767} {
+    padding: 0 50px;
+  }
+
+  @media #{$max575} {
+    padding: 0 15px;
+  }
+}
+
+.section {
+  margin-bottom: 50px;
+  z-index: 1;
+  // background-color: rgba(255, 255, 255, 0.64);
+  // padding: 15px;
+  // border-radius: 20px;
+
+  @media #{$max767} {
+    background-color: rgba(255, 255, 255, 0.64);
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  @media #{$max575} {
+    margin-bottom: 20px;
+    // background: none;
+    // padding: 0;
+    // border-radius: 0;
+  }
+
+  &--title {
+    position: relative;
+    margin-bottom: 30px;
+
+    @media #{$max767} {
+        margin-bottom: 10px;
+    }
+
+    @media #{$max575} {
+        margin-bottom: 0;
+      }
+
+    &::after {
+      content: "";
+      width: 6%;
+      height: 3px;
+      display: inline-block;
+      position: absolute;
+      bottom: 5px;
+      left: calc(50% - 3%);
+      background: $main-clr;
+      border: 1px solid $main-clr;
+      border-radius: 20%;
+      margin: 12px auto;
+
+      @media #{$max575} {
+        width: 10%;
+        height: 2px;
+        left: calc(50% - 5%);
+      }
+    }
+  }
+}
+
+.basic-text {
+  text-align: justify;
+}
+
+.el {
+  padding-left: 10px;
+  position: relative;
+  padding-bottom: 10px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $main-clr;
+    position: absolute;
+    z-index: -1;
+    left: -7px;
+    top: -5px;
+  }
+}

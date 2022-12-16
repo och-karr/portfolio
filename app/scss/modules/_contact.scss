@@ -1,0 +1,73 @@
+.contact-section {
+  .contact-columns {
+    display: flex;
+    flex-wrap: wrap;
+
+    .my-data {
+      width: 50%;
+
+      @media #{$max767} {
+        width: 100%;
+      }
+
+      .my-data-title {
+        text-align: center;
+
+        @media #{$max991} {
+          font-size: 22px;
+        }
+
+        @media #{$max767} {
+          font-size: 18px;
+          text-align: left;
+          padding-top: 30px;
+        }
+
+        @media #{$max575} {
+          padding-top: 10px;
+        }
+      }
+
+      .my-btn-container {
+        padding-left: 80px;
+
+        @media #{$max991} {
+          padding-left: 40px;
+        }
+
+        @media #{$max767} {
+          padding-left: 10px;
+        }
+
+        .my-btn {
+          display: flex;
+          text-align: left;
+
+          .contact-icon-description {
+            padding-left: 20px;
+
+            @media #{$max991} {
+              font-size: 14px;
+              display: inline-block;
+            }
+          }
+
+          .fab,
+          .fas {
+            @include icon-size(30px);
+            @include main-icon-settings;
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            .fab,
+            .fas {
+              @include hover-icon-settings;
+            }
+          }
+        }
+      }
+    }
+  }
+}

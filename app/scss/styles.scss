@@ -1,0 +1,34 @@
+/*
+PROJECT STYLES
+==============
+Imports all project style components.
+*/
+
+// Variables
+@import "variables/colors";
+@import "variables/fonts";
+
+// Mixins
+@import "mixins/media-breakpoints";
+@import "mixins/icon";
+
+// Base
+@import "base/base";
+@import "base/typography";
+@import "base/general";
+
+// Components
+
+// Modules
+@import "modules/squares";
+@import "modules/nav";
+@import "modules/header";
+@import "modules/about";
+@import "modules/experience";
+@import "modules/projects";
+@import "modules/technologies";
+@import "modules/contact";
+@import "modules/footer";
+
+//Libraries
+@import "libraries/slick"

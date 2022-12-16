@@ -1,0 +1,55 @@
+.about-me {
+
+  .section--title {
+    width: 100%;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  &__text-container {
+    width: 70%;
+    padding-right: 10px;
+
+    @media #{$max767} {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  &__foto-container {
+    width: 30%;
+
+    @media #{$max767} {
+      width: 100%;
+    }
+
+    @media #{$max575} {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &__foto {
+    width: 100%;
+    max-width: 265px;
+    margin: 0 auto;
+    margin-top: -60px;
+
+    @media #{$max991} {
+      margin-top: 0;
+    }
+
+    @media #{$max767} {
+      max-width: 200px;
+      display: block;
+    }
+
+  }
+  
+  &--text {
+    text-indent: 4%;
+
+    &-link {
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+}

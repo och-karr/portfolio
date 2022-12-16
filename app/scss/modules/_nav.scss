@@ -1,0 +1,152 @@
+.nav {
+  height: 70px;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $transparent-white-clr;
+  z-index: 5;
+
+  @media #{$max767} {
+    padding: 15px;
+    border-bottom: 1px solid $border-clr;
+  }
+
+  &--icons {
+    display: flex;
+
+    &-icon {
+      padding-right: 15px;
+
+      .icon-link {
+        display: inline-block;
+
+        .fab {
+          display: inline-block;
+          font-size: 24px;
+          @include icon-size(28px);
+          @include main-icon-settings;
+
+          &:hover {
+            @include hover-icon-settings;
+          }
+
+          @media #{$max767} {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .nav-btn {
+        background-color: transparent;
+        border: none;
+        font-family: $main-font;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+
+  &--toggle-menu {
+    display: none;
+
+    @media #{$max767} {
+      display: block;
+    }
+
+    .fas {
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+
+  &--list {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+
+    @media #{$max1199} {
+      padding-right: 0;
+    }
+
+    @media #{$max767} {
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+    }
+
+    &-link {
+      padding-left: 50px;
+
+      @media #{$max1199} {
+        padding-left: 25px;
+      }
+
+      @media #{$max767} {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        background-color: $transparent-white-clr;
+        border-bottom: 1px solid $border-clr;
+      }
+
+      .link-name {
+        position: relative;
+        line-height: 22px;
+        font-family: $main-font;
+
+        &::after {
+          content: "";
+          height: 1px;
+          width: 0;
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transition: width 0.2s;
+          background-color: $main-clr;
+          z-index: 2;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+            transition: width 0.2s;
+          }
+        }
+
+        @media #{$max767} {
+          font-size: 14px;
+        }
+
+        @media #{$max575} {
+          font-size: 16px;
+
+          &:hover {
+            &::after {
+              width: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-open {
+    left: 0;
+    transition: all 0.2s;
+  }
+
+  .mobile-close {
+    left: -100%;
+    transition: all 0.2s;
+  }
+}

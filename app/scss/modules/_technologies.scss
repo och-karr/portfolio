@@ -1,0 +1,112 @@
+.technologies {
+
+  &--box {
+    padding: 20px 0 10px 0;
+  }
+  &--list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media #{$max575} {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-el {
+      height: 90px;
+      display: flex;
+      // width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+
+      @media #{$max767} {
+        height: 90px;
+      }
+
+      @media #{$max575} {
+      //   width: 50%;
+      //   justify-content: center;
+      }
+
+      .technologies-img-container {
+        height: 70px;
+        width: 70px;
+        margin-right: 15px;
+        display: inline-block;
+
+        @media #{$max767} {
+          width: 60px;
+          margin-right: 10px;
+        }
+
+        @media #{$max575} {
+          width: 40px;
+          margin-right: 10px;
+        }
+
+        .technologies-img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+
+      .technologies-text {
+        display: flex;
+        height: 100%;
+        width: calc(100% - 100px);
+
+
+        .bold-text {
+          height:100%;
+          padding-right: 20px;
+          display: flex;
+          align-items: center;
+          font-size: 20px;
+          font-weight: 600;
+
+          @media #{$max991} {
+            font-size: 18px;
+          }
+
+          @media #{$max767} {
+            font-size: 16px;
+            padding-right: 10px;
+          }
+        }
+
+        .basic-text {
+          display: flex;
+          align-items: center;
+
+          @media #{$max1199} {
+            line-height: 24px;
+          }
+
+          @media #{$max991} {
+            font-size: 14px;
+            line-height: 22px;
+          }
+
+          @media #{$max767} {
+            font-size: 13px;
+            line-height: 18px;
+          }
+
+          @media #{$max575} {
+            display: none;
+          }
+
+
+          // @media #{$max767} {
+          //   font-size: 13px;
+          // }
+        }
+
+        // display: inline-block;
+        // padding-top: 20px;
+        // height: 100%;
+      }
+    }
+  }
+}
