@@ -48,6 +48,8 @@ const projCountrySearch = document.getElementById('proj-country-search');
 const projTodoReact = document.getElementById('proj-todo-react');
 // const projTodoList = document.getElementById('proj-todo-list');
 const projStopwatch = document.getElementById('proj-stopwatch');
+const projNgShop = document.getElementById('proj-ng-shop');
+const projNgAuth = document.getElementById('proj-ng-auth');
 
 const projectsScreens = document.getElementById('projects-screens');
 
@@ -137,7 +139,9 @@ const names = [
         paginacja, dzięki której można wyświetlać ograniczoną ilość zadań na stronę. Zadania 
         można usuwać i zapisują się one w pamięci lokalnej.`,
       stopwatch: `Projekt stopera napisany z wykorzystaniem składni ES6. Stoper posiada funkcje, 
-        które go uruchamiają, zatrzymują, resetują, a także dodają czas do listy i czyszczą tą listę.`
+        które go uruchamiają, zatrzymują, resetują, a także dodają czas do listy i czyszczą tą listę.`,
+      ngShop: `Projekt sklepu napisany w Angular 14. W widoku kategorii - sortowanie, filtrowanie, search, paginacja.`,
+      ngAuth: `Projekt wykorzystujący autentykację, autoryzację, refresh, guardy.`
     },
     titles: {
       projectsScreens: `Przykładowe projekty wykonane podczas mojej pracy (screeny)`
@@ -234,7 +238,9 @@ const names = [
          task list by the name or the execution status. The pagination allows you to display a limited 
          number of tasks per page. Tasks can be deleted and saved in the local memory.`,
       stopwatch: `Project of stopwatch scripted using the ES6 syntax. The stopwatch has functions that 
-        start, stop, reset, and add time to the list and clean the list.`
+        start, stop, reset, and add time to the list and clean the list.`,
+      ngShop: `Shop in Angular 14. I used sorting, filtering, search and pagination in category view.`,
+      ngAuth: `A project using authentication, authorization, refresh, guards.`
     },
     titles: {
       projectsScreens: `Sample projects made during my work (screenshots)`
@@ -311,6 +317,8 @@ const translate = (lang) => {
   projTodoReact.innerHTML = names[lang].projects.todoReact;
   // projTodoList.innerHTML = names[lang].projects.todoList;
   projStopwatch.innerHTML = names[lang].projects.stopwatch;
+  projNgShop.innerHTML = names[lang].projects.ngShop;
+  projNgAuth.innerHTML = names[lang].projects.ngAuth;
 
   projectsScreens.innerHTML = names[lang].titles.projectsScreens;
 
